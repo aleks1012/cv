@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar {
+  background-color: #1e2939;
+  width: 370px;
+  /*padding-top: 20px;/*возможно убрать??*/
+  padding-bottom: 20px;
+}
+
+.sidebar_photo {
+  width: 370px;
+  /*height: 370px;*/
+  border-radius: 50%; сделать аватарку круглой
+}
+.sidebar_h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.sidebar_contacts {
+  margin: 40px 40px 0px 40px;
+}
+
+.sidebar_contacts_ul {
+  list-style-type: none;
+}
+
+.sidebar_contacts_text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.sidebar_contacts_link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #d8dadd;
+  text-decoration: none;
+}
+
+.sidebar_contacts_link:hover {
+  text-decoration: underline;
+}
+
+.sidebar_skills {
+ margin: 40px 40px 0px 40px;
+}
+
+.sidebar_item {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ff6b08;
+  margin-left: 15px;
+}
+
+.sidebar_text {
+  color: #d8dadd;
+}
+
+.basic-information{
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 40px;
+}
+
+.header_h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main {
+  width: calc 100%;
+}
+
+.about-me {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
+
+.about-me_text {
+  margin-top: 40px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.about-me_experience {
+  margin-top: 40px;
+}
+
+.expirience_h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.expirience_list {
+  list-style-type: none;
+}
+
+.expirience_item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.code-example_photo {
+  width: 100%;
+}
+
+.footer {
+  bottom:0;
+  height:50px; 
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
+.footer_logo {
+  width: 100px;
+  display: flex;
+}
+
+.footer_time{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  text-align:  center;
+}
