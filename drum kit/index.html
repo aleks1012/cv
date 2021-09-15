@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+
+  <div class="content">
+    <div class="keys">
+      <div class="key" data-key="65" data-letter="A" data-note="clap">
+        <kbd class="letter" data-note="clap">A</kbd>
+        <span class="sound" data-note="clap">clap</span>
+        <audio id = "keyA" data-key="65" src="assets/sounds/clap.wav">
+      </div>
+      <div class="key" data-key="83" data-letter="S" data-note="hihat">
+        <kbd class="letter" data-note="hihat">S</kbd>
+        <span class="sound" data-note="hihat">hihat</span>
+        <audio id = "keyS" data-key="83" src="assets/sounds/hihat.wav">
+      </div>
+      <div class="key" data-key="68" data-letter="D" data-note="kick">
+        <kbd class="letter" data-note="kick">D</kbd>
+        <span class="sound"  data-note="kick">kick</span>
+        <audio id = "keyD" data-key="68" src="assets/sounds/kick.wav">
+      </div>
+      <div class="key" data-key="70" data-letter="F" data-note="openhat">
+        <kbd class="letter" data-note="openhat">F</kbd>
+        <span class="sound"  data-note="openhat">openhat</span>
+        <audio id = "keyF" data-key="70" src="assets/sounds/openhat.wav">
+      </div>
+      <div class="key" data-key="71" data-letter="G" data-note="boom">
+        <kbd class="letter" data-note="boom">G</kbd>
+        <span class="sound"  data-note="boom">boom</span>
+        <audio id = "keyG" data-key="71" src="assets/sounds/boom.wav">
+      </div>
+      <div class="key" data-key="72" data-letter="H" data-note="ride">
+        <kbd class="letter" data-note="ride">H</kbd>
+        <span class="sound" data-note="ride">ride</span>
+        <audio id = "keyH" data-key="72" src="assets/sounds/ride.wav">
+      </div>
+      <div class="key" data-key="74" data-letter="J" data-note="snare">
+        <kbd class="letter" data-note="snare">J</kbd>
+        <span class="sound" data-note="snare">snare</span>
+        <audio id = "keyJ" data-key="74" src="assets/sounds/snare.wav">
+      </div>
+      <div class="key" data-key="75" data-letter="K" data-note="tom">
+        <kbd class="letter" data-note="tom">K</kbd>
+        <span class="sound" data-note="tom">tom</span>
+        <audio id = "keyK" data-key="75" src="assets/sounds/tom.wav">
+      </div>
+      <div class="key" data-key="76" data-letter="L" data-note="tink">
+        <kbd class="letter" data-note="tink">L</kbd>
+        <span class="sound" data-note="tink">tink</span>
+        <audio id = "keyL" data-key="76" src="assets/sounds/tink.wav">
+      </div>
+    </div>
+    <div class="menu">
+      <button class="toggleThemeBtn">Light mode</button>
+      <button class="fullscreen openfullscreen"></button>
+    </div>
+  </div>  
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+<script>
+
+</script>
+
+
+</body>
+</html>
