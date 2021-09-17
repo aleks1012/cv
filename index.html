@@ -11,75 +11,157 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 
   <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="highlight/styles/monokai-sublime.min.css">
+<script src="highlight/languages/javascript.min.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script>
+<script defer src="script.js"></script>
   <title>CV Zharskii</title>
 </head>
-  <body>
+  <body>  
     <div class="page_content">
-      <aside class="sidebar">
-        <img src="picture/photo.jpg" alt="There should be a photo here, but something is wrong..." class="sidebar_photo">
-        <div class="sidebar_contacts">
-          <h2 class="sidebar_h2">Personal information</h2>
-          <ul class="sidebar_contacts_ul">
-            <li><span class="sidebar_contacts_text">E-mail: </span><a href="mailto:aleksei-zharskii@gmail.com" class="sidebar_contacts_link">aleksei-zharskii@gmail.com</a></li>
-            <li><span class="sidebar_contacts_text">VK: </span><a href="https://vk.com/id47621951" class="sidebar_contacts_link">https://vk.com/id47621951</a></li>
-            <li><span class="sidebar_contacts_text">Discord: </span><a href="https://discord.com" class="sidebar_contacts_link">Aleksei.Zharskii#0032</a></li>
-          </ul>
-        </div>
-        <div class="sidebar_skills">
-          <h2 class="sidebar_h2">Skills</h2>
-          <ul>
-            <li class="sidebar_item"><span class="sidebar_text">HTML</span></li>
-            <li class="sidebar_item"><span class="sidebar_text">CSS</span></li>
-            <li class="sidebar_item"><span class="sidebar_text">JavaScript</span></li>
-            <li class="sidebar_item"><span class="sidebar_text">GIT</span></li>
-            <li class="sidebar_item"><span class="sidebar_text">Windows</span></li>
-          </ul>
-          <h2 class="sidebar_h2">Languages skills:</h2>
-          <ul>
-            <li class="sidebar_item"><span class="sidebar_text">Russian - Native</span></li>
-            <li class="sidebar_item"><span class="sidebar_text">English - A2</span></li>
-          </ul>  
-        </div>
-      </aside>
-      <div class="basic-information">
-        <header class="header">
-          <h1 class="header_h1">Aleksei Zharskii</h1>
+      <header>
+          <div class="wrapper">
+            <nav>
+              <div class="contain">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <ul class="nav__box" >
+                <li class="nav__item"><a href="#about_me" class="nav__link text">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link text">Work</a></li>
+                <li class="nav__item"><a href="#education" class="nav__link text">Education</a></li>
+                <li class="nav__item"><a href="#skills" class=" nav__link text">Skills</a></li>
+                <li class="nav__item"><a href="#code" class="nav__link text">Code</a></li>
+                <li class="nav__item"><a href="#project" class="nav__link text">My projects</a></li>
+              </ul>
+            </nav>
+          </div>
         </header>
         <main class="main">
-          <div class="about-me">
-            <p class="about-me_text">My name is Aleksei and I am at the beginning of my career in IT. I am kind, helpful and friendly person who enjoys working in a group. I think being part of a close-knit team that has one goal is very cool! </p>
+          <div class="main__about-me" id="about_me">
+            <section class="about-me__information">
+              <div class="about-me__paragraph">
+                <h1 class="about-me__h1">Aleksei Zharskii</h1>
+                <p class="about-me_text">Hi! My name is Aleksei and I am at the beginning of my career in IT. I am kind, helpful and friendly person who enjoys working in a group. I think being part of a close-knit team that has one goal is very cool!</p>
+              </div>
+              <img src="picture/photo.jpg" alt="There should be a photo here, but something is wrong..." class="about-me_photo">
+            </section>  
             <div class="about-me_experience">
-              <h2 class="expirience_h2">Work experience</h2>
-              <ul class="expirience_list">
-                <li class="expirience_item">2017 - 2019: Electrician</li>
-                <li class="expirience_item">Since 2019: Boiler Engineer</li>
-              </ul>
-              <h2 class="expirience_h2">Education</h2>
-              <ul class="expirience_list">
-                <li class="expirience_item">2013 - 2017: Samara State Technical University, Heat Power Engineering Faculty</li>
-                <li class="expirience_item">2017 - 2019: Samara State Technical University, Electrical Engineering Faculty</li>
-                <li class="expirience_item">2021: RS School JavaScript/Front-end 2021Q1, Stage 0 and Stage 1</li>
-              </ul>
+              <section>  
+                <h2 class="expirience_h2" id="work">Work experience</h2>
+                <ul class="expirience_list">
+                  <li class="expirience_item">2017 - 2019: Electrician</li>
+                  <li class="expirience_item">Since 2019: Boiler Engineer</li>
+                </ul>
+              </section>  
+              <section>  
+                <h2 class="expirience_h2" id="education">Education</h2>
+                <ul class="expirience_list">
+                  <li class="expirience_item">2013 - 2017: Samara State Technical University, Heat Power Engineering Faculty</li>
+                  <li class="expirience_item">2017 - 2019: Samara State Technical University, Electrical Engineering Faculty</li>
+                  <li class="expirience_item">2021: RS School JavaScript/Front-end 2021Q1, Stage 0 and Stage 1</li>
+                  <li class="expirience_item">2021: RS School JavaScript/Front-end 2021Q3, Stage 0</li>
+                </ul>
+              </section>
             </div>
-            <div>
-              <h2 class="expirience_h2">Code example</h2>
-              <img src="picture/Code_example.JPG" alt="There should be a code example here, but something is wrong..." class="code-example_photo">
-            </div>
+            <section class="main__skills">
+              <div class="skills" id="skills">
+                <h2 class="skills_h2">Skills</h2>
+                <ul>
+                  <li class="skills_item"><span class="skills_text">HTML</span></li>
+                  <li class="skills_item"><span class="skills_text">CSS</span></li>
+                  <li class="skills_item"><span class="skills_text">JavaScript</span></li>
+                  <li class="skills_item"><span class="skills_text">GIT</span></li>
+                </ul>
+                <h2 class="skills_h2">Languages skills:</h2>
+                <ul>
+                  <li class="skills_item"><span class="skills_text">Russian - Native</span></li>
+                  <li class="skills_item"><span class="skills_text">English - A2</span></li>
+                </ul>  
+              </div>
+            </section>
+            <section class="main__code">  
+              <h2 class="expirience_h2" id="code">Code example</h2>
+                <pre class="pre"><code class="hljs language-javascript code__text">
+                  <span class="hljs-keyword">function</span> <span class="hljs-title function_">absentVowel</span>(<span class="hljs-params">x</span>) {
+                    <span class="hljs-keyword">if</span> (x.<span class="hljs-title function_">indexOf</span>(<span class="hljs-quote"><span class="hljs-quote">'</span></span><span class="hljs-string">a</span><span class="hljs-quote"><span class="hljs-quote">'</span></span>) === -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+                    <span class="hljs-keyword">if</span> (x.<span class="hljs-title function_">indexOf</span>(<span class="hljs-quote">'</span><span class="hljs-string">e</span><span class="hljs-quote">'</span>) === -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+                    <span class="hljs-keyword">if</span> (x.<span class="hljs-title function_">indexOf</span>(<span class="hljs-quote">'</span><span class="hljs-string">i</span><span class="hljs-quote">'</span>) === -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+                    <span class="hljs-keyword">if</span> (x.<span class="hljs-title function_">indexOf</span>(<span class="hljs-quote">'</span><span class="hljs-string">o</span><span class="hljs-quote">'</span>) === -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>;
+                    <span class="hljs-keyword">if</span> (x.<span class="hljs-title function_">indexOf</span>(<span class="hljs-quote">'</span><span class="hljs-string">u</span><span class="hljs-quote">'</span>) === -<span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">4</span>;
+                  }
+                </code></pre>
+            </section>
+            <section class="main__project">
+              <h2 class="expirience_h2" id="project">My projects</h2>
+              <div class="project__cards">
+                <div class="project__card">
+                  <a href="https://aleks1012.github.io/rsschool-cv/virtual%20piano/">
+                    <img src="picture/project_virtual_piano.JPG" alt="Virtual piano project screenshots" class="project__image" data-image="virtual_piano">
+                  </a>
+                  <h3 class="project__title_size_m">Virtual piano</h3>
+                  <p class="card__text_location_top text__size-s">Музыкальное приложение, в котором нажимая клавиши на клавиатуре или нажимая на виртуальные клавиши с помощью кнопки мыши, можно проигрывать звуки пианино. Каждой клавише клавиатуры соответствует свой звук.</p>
+                  <h4 class="project__title_size_m">Ключевые навыки</h4>
+                  <ul class="project__list">
+                    <li class="text__size-s">Работа с DOM</li>
+                    <li class="text__size-s">Работа со звуком</li>
+                    <li class="text__size-s">Работа с Fullscreen API</li>
+                  </ul>
+                </div>
+                <div class="project__card">
+                  <a href="https://aleks1012.github.io/rsschool-cv/photo%20filter/">
+                    <img src="picture/project_photo_filter.JPG" alt="Photo filter project screenshots" class="project__image" data-image="photo_filter">
+                  </a>
+                  <h3 class="project__title_size_m">Photo filter</h3>
+                  <p class="card__text_location_top text__size-s">Фоторедактор, позволяющий редактировать изображение, применяя к ним различные свойства и фильтры</p>
+                  <h4 class="project__title_size_m">Ключевые навыки</h4>
+                  <ul class="project__list">
+                    <li class="text__size-s">Использование js для работы с файлами</li>
+                    <li class="text__size-s">Загрузка локальных файлов в приложение</li>
+                    <li class="text__size-s">Сохранения файлов на компьютер</li>
+                    <li class="text__size-s">Работа с датами в js</li>
+                    <li class="text__size-s">Работа с Canvas API</li>
+                  </ul>   
+                </div>
+                <div class="project__card">
+                  <a href="https://aleks1012.github.io/rsschool-cv/drum%20kit/">
+                    <img src="picture/project_drum_kit.jpg" alt="Drum kit project screenshots" class="project__image" data-image="drum_kit">
+                  </a>
+                  <h3 class="project__title_size_m">Drum kit</h3>
+                  <p class="card__text_location_top text__size-s">Музыкальное приложение, в котором нажимая клавиши на клавиатуре или нажимая на виртуальные клавиши с помощью кнопки мыши, можно проигрывать звуки барабана. Каждой клавише клавиатуры соответствует свой звук.</p>
+                  <h4 class="project__title_size_m">Ключевые навыки</h4>
+                  <ul class="project__list">
+                    <li class="text__size-s">Работа с DOM</li>
+                    <li class="text__size-s">Работа со звуком</li>
+                    <li class="text__size-s">Работа с Fullscreen API</li>
+                  </ul>   
+                </div>
+              </div>                 
+            </section>           
           </div>
         </main>
         <footer class="footer">
-          <a href="https://rs.school/js/" class="footer_logo">
-            <img src="picture/logo.svg" alt="RS School">
-          </a>
-          <a href="https://yandex.ru/time/" class="footer_logo">
-            <time datetime="2021-07-22" class="footer_time">2021</time>
-          </a>
-          
-          <a href="https://github.com/aleks1012/rsschool-cv/tree/rsschool-cv-html" class="footer_logo">
-            <img src="picture/github.png" alt="github" class="footer_logo">
-          </a>
+          <section class="section_footer">
+              <div class="footer__contacts">
+                <ul class="contacts__ul">
+                  <li class="contacts__element">
+                    <a href="https://github.com/aleks1012/rsschool-cv/tree/rsschool-cv-html" class="footer_logo">
+                      <img src="picture/github.png" alt="github" class="footer_logo">
+                    </a> 
+                  </li>
+                  <li class="contacts__element"><h4 class="contacts__text">E-mail: </h4><a href="mailto:aleksei-zharskii@gmail.com" class="contacts__link">aleksei-zharskii@gmail.com</a></li>
+                  <li class="contacts__element"><h4 class="contacts__text">VK: </h4><a href="https://vk.com/id47621951" class="contacts__link">https://vk.com/id47621951</a></li>
+                  <li class="contacts__element"><h4 class="contacts__text">Discord: </h4><a href="https://discord.com" class="contacts__link">Aleksei.Zharskii#0032</a></li>
+                  <li class="contacts__element">
+                    <a href="https://yandex.ru/time/" class="">
+                      <time datetime="2021-07-22" class="footer_time">2021</time>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+          </section>  
         </footer>
-    </div>
     </div>
   </body>
 </html>
